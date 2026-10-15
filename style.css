@@ -1,0 +1,437 @@
+/* ===== GLOBAL ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #F9F7FF;
+  color: #2D2D4E;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #fff;
+  border-bottom: 2px solid #EDE9FF;
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.6rem;
+  color: #6B48FF !important;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 700;
+  color: #2D2D4E !important;
+  font-size: 0.95rem;
+  padding: 6px 14px !important;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: #EDE9FF;
+  color: #6B48FF !important;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #6B48FF 0%, #A855F7 100%);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 300px; height: 300px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: -40px;
+  width: 240px; height: 240px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255,255,255,0.9);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.btn-main {
+  display: inline-block;
+  background: #fff;
+  color: #6B48FF;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-main:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+  color: #6B48FF;
+}
+
+/* ===== TOPICS SECTION ===== */
+.topics-section {
+  padding: 70px 20px;
+}
+
+.section-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #2D2D4E;
+  margin-bottom: 40px;
+}
+
+/* ===== TOPIC CARDS ===== */
+.topic-card {
+  display: block;
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-decoration: none;
+  color: #2D2D4E;
+  border: 2.5px solid transparent;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  height: 100%;
+}
+
+.topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.13);
+  color: #2D2D4E;
+}
+
+.topic-green:hover  { border-color: #22C55E; }
+.topic-blue:hover   { border-color: #3B82F6; }
+.topic-purple:hover { border-color: #A855F7; }
+.topic-orange:hover { border-color: #F97316; }
+.topic-pink:hover   { border-color: #EC4899; }
+
+.topic-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.topic-card h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.topic-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.topic-link {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #6B48FF;
+}
+
+.topic-green  .topic-link { color: #16A34A; }
+.topic-blue   .topic-link { color: #2563EB; }
+.topic-purple .topic-link { color: #9333EA; }
+.topic-orange .topic-link { color: #EA580C; }
+.topic-pink   .topic-link { color: #DB2777; }
+
+/* ===== TOPIC PAGE ===== */
+.topic-banner {
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+
+.topic-banner h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.topic-banner p {
+  font-size: 1.1rem;
+  max-width: 560px;
+  margin: 0 auto;
+  color: #555;
+  font-weight: 600;
+}
+
+.banner-green  { background: #F0FDF4; }
+.banner-blue   { background: #EFF6FF; }
+.banner-purple { background: #FAF5FF; }
+.banner-orange { background: #FFF7ED; }
+.banner-pink   { background: #FDF2F8; }
+
+.content-section {
+  padding: 50px 20px;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  margin-bottom: 28px;
+}
+
+.content-card h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #2D2D4E;
+}
+
+.content-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-list li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.tips-list li:last-child { border-bottom: none; }
+
+.tip-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== QUIZ ===== */
+.quiz-section {
+  background: #fff;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 680px;
+  margin: 0 auto 60px;
+}
+
+.quiz-section h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #2D2D4E;
+}
+
+.quiz-progress {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.progress-bar-wrap {
+  background: #EDE9FF;
+  border-radius: 10px;
+  height: 8px;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #6B48FF;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.quiz-question {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2D2D4E;
+  line-height: 1.5;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.quiz-option {
+  background: #F9F7FF;
+  border: 2px solid #EDE9FF;
+  border-radius: 14px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  color: #2D2D4E;
+}
+
+.quiz-option:hover:not(:disabled) {
+  background: #EDE9FF;
+  border-color: #6B48FF;
+  transform: translateX(4px);
+}
+
+.quiz-option.correct {
+  background: #F0FDF4;
+  border-color: #22C55E;
+  color: #15803D;
+}
+
+.quiz-option.wrong {
+  background: #FEF2F2;
+  border-color: #EF4444;
+  color: #B91C1C;
+}
+
+.quiz-option:disabled { cursor: default; }
+
+.quiz-feedback {
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: none;
+  line-height: 1.6;
+}
+
+.quiz-feedback.correct {
+  background: #F0FDF4;
+  color: #15803D;
+  border: 2px solid #86EFAC;
+  display: block;
+}
+
+.quiz-feedback.wrong {
+  background: #FEF2F2;
+  color: #B91C1C;
+  border: 2px solid #FCA5A5;
+  display: block;
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-next {
+  background: #6B48FF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  display: none;
+}
+
+.btn-next:hover { background: #5636e0; transform: translateY(-2px); }
+
+.quiz-score {
+  text-align: center;
+  padding: 20px 0;
+  display: none;
+}
+
+.score-number {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  color: #6B48FF;
+  display: block;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.quiz-score p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.btn-retry {
+  background: #EDE9FF;
+  color: #6B48FF;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-retry:hover { background: #d8d0ff; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #2D2D4E;
+  color: rgba(255,255,255,0.7);
+  padding: 28px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
