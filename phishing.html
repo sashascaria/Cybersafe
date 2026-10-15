@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phishing — CyberSafe Teens</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing | CyberSafe Teens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg sticky-top">
+
+<nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="index.html">🛡️ CyberSafe</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand" href="index.html">️ CyberSafe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto gap-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="passwords.html">Passwords</a></li>
         <li class="nav-item"><a class="nav-link active" href="phishing.html">Phishing</a></li>
@@ -27,77 +29,251 @@
   </div>
 </nav>
 
-<div class="topic-banner banner-blue">
+<div class="page-hero">
   <div class="container">
-    <div style="font-size:3.5rem; margin-bottom:12px;">🎣</div>
-    <h1 style="color:#1D4ED8;">Phishing</h1>
-    <p>Scammers try to trick you into giving away your information. Learn how to spot them!</p>
+    <h1> Phishing</h1>
+    <p>Scammers send fake emails and messages to steal your info. Here is how to spot them.</p>
   </div>
 </div>
 
-<section class="content-section">
-  <div class="container" style="max-width:780px;">
-    <div class="content-card">
-      <h2>What is phishing?</h2>
-      <p>Phishing is when someone pretends to be a trusted person or company to trick you into giving them your personal information — like your password, address, or credit card number.</p>
-      <p>The name comes from "fishing" — scammers cast out fake messages and wait for someone to take the bait!</p>
-    </div>
-    <div class="content-card">
-      <h2>Warning signs to watch for 🚨</h2>
-      <ul class="tips-list">
-        <li><span class="tip-icon">📧</span> Emails or messages asking for your password or personal details</li>
-        <li><span class="tip-icon">⚡</span> Messages that say "Act NOW or your account will be deleted!"</li>
-        <li><span class="tip-icon">🔗</span> Links that look odd or slightly misspelled — like "g00gle.com"</li>
-        <li><span class="tip-icon">🎁</span> Messages saying you have won a prize you never entered</li>
-        <li><span class="tip-icon">👤</span> Messages from unknown senders pretending to be your bank or school</li>
-      </ul>
-    </div>
-    <div class="content-card">
-      <h2>What to do if you think something is fake</h2>
-      <ul class="tips-list">
-        <li><span class="tip-icon">🛑</span> Do not click any links in the message</li>
-        <li><span class="tip-icon">🗑️</span> Delete the message immediately</li>
-        <li><span class="tip-icon">👨‍👩‍👧</span> Tell a trusted adult straight away</li>
-        <li><span class="tip-icon">🔍</span> If unsure, go to the real website by typing it yourself — never click the link</li>
-      </ul>
-    </div>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
 
-    <div class="quiz-section">
-      <h2>🧠 Test Your Knowledge</h2>
-      <p style="color:#888; font-size:0.95rem; margin-bottom:20px; font-weight:600;">Answer all 5 questions and see how you do!</p>
-      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
-      <div class="quiz-progress" id="progressText">Question 1 of 5</div>
-      <div id="quizArea">
-        <div class="quiz-question" id="questionText"></div>
-        <div class="quiz-options" id="optionsArea"></div>
-        <div class="quiz-feedback" id="feedbackBox"></div>
-        <div class="quiz-nav"><button class="btn-next" id="nextBtn" onclick="nextQuestion()">Next question →</button></div>
+      <div class="col-lg-8">
+
+        <div class="info-card">
+          <h4>What is phishing?</h4>
+          <p>
+            Phishing is when someone pretends to be a trusted company or person to trick you into giving them your personal
+            information. They usually do this through emails or messages that look real but are actually fake.
+            The goal is to get you to click a link, log in to a fake website, or give them your password.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>What do phishing messages look like?</h4>
+          <p>
+            They often pretend to be from places like Netflix, your bank, Amazon, or even your school.
+            The message usually says something urgent like "Your account has been suspended" or "You have won a prize, click here."
+            The email address might look almost right but have something slightly off, like "support@netfl1x.com" instead of netflix.com.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>How to check if a link is safe</h4>
+          <p>
+            Before you click any link in an email, hover over it with your mouse and look at what address actually appears.
+            If it looks strange or different from the website it claims to be, do not click it.
+            You can also go directly to the official website by typing the address yourself rather than clicking the link.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>What to do if you think it is phishing</h4>
+          <p>
+            Do not click any links or download any attachments. Report the message as spam or phishing in your email app.
+            If you already clicked something and entered your details, change your password straight away and let a parent or teacher know.
+            It is better to be safe and tell someone than to keep it to yourself.
+          </p>
+        </div>
+
       </div>
-      <div class="quiz-score" id="scoreArea">
-        <span class="score-number" id="scoreNumber"></span>
-        <p id="scoreMessage"></p>
-        <button class="btn-retry" onclick="restartQuiz()">Try again 🔄</button>
+
+      <div class="col-lg-4">
+        <div class="why-badge">
+          <h4>Why phishing is so dangerous</h4>
+          <p>Phishing is one of the most common cyber attacks. It works because the messages look so real. Even adults fall for them, so knowing the warning signs really matters.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Warning signs</h4>
+          <ul class="tips-list">
+            <li>Strange or misspelled email address</li>
+            <li>Creates panic or urgency</li>
+            <li>Asks for passwords or card details</li>
+            <li>Links do not match the website name</li>
+            <li>Bad spelling or grammar</li>
+            <li>Unexpected attachments</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff; padding: 50px 0; border-top: 2px solid #EDE9FF;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+
+        <div class="quiz-wrapper">
+          <h3> Quick Quiz</h3>
+          <p class="quiz-progress" id="progress">Question 1 of 5</p>
+          <div id="quiz-area">
+            <p class="quiz-question" id="question-text"></p>
+            <div id="options-area"></div>
+            <div class="quiz-feedback" id="feedback"></div>
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Next question</button>
+          </div>
+          <div class="score-box" id="score-box">
+            <div class="score-num" id="score-num"></div>
+            <div class="score-label">out of 5</div>
+            <div class="score-msg" id="score-msg"></div>
+            <button class="btn-restart" onclick="restartQuiz()">Try again</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<footer><div class="container text-center"><p>🛡️ CyberSafe Teens &nbsp;|&nbsp; Made to keep young people safe online</p></div></footer>
+<footer>
+  <div class="container">
+    <span class="footer-brand">️ CyberSafe Teens</span>
+    <p style="margin:0;">Made by Sasha Scaria as an MYP Personal Project at GEMS Modern Academy, Dubai.</p>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 const questions = [
-  { q: "What is phishing?", options: ["A type of fishing sport", "A trick to steal your personal information", "A safe way to share files", "A computer game"], answer: 1, explanation: "Phishing is when scammers pretend to be trusted people to steal your personal information." },
-  { q: "You get an email saying 'Click here or your account will be deleted in 1 hour!' What should you do?", options: ["Click the link immediately", "Ignore and delete it", "Reply with your password", "Forward it to friends"], answer: 1, explanation: "Messages that create panic and urgency are a common phishing trick. Delete them and tell an adult." },
-  { q: "Which of these links looks suspicious?", options: ["www.google.com", "www.paypal.com", "www.g00gle.com", "www.bbc.co.uk"], answer: 2, explanation: "g00gle.com uses zeros instead of the letter 'o' — a common trick scammers use to fool people." },
-  { q: "A message says you won a free iPhone. You never entered a competition. What is this?", options: ["A real prize — claim it!", "A phishing scam", "A message from a friend", "A school announcement"], answer: 1, explanation: "If you never entered a competition, you cannot have won. This is a classic phishing trick." },
-  { q: "What is the safest way to visit a website mentioned in an email?", options: ["Click the link in the email", "Type the web address yourself into the browser", "Copy and paste the link", "Ask a friend to click it"], answer: 1, explanation: "Always type the web address yourself. Links in emails could take you to fake websites." }
+  {
+    q: "You get an email from 'support@g00gle.com' saying your account has been hacked. What should you do?",
+    options: [
+      "Click the link and log in quickly",
+      "Reply with your password to verify your identity",
+      "Check the sender's email address. It looks fake, so mark it as spam",
+      "Forward it to all your friends to warn them"
+    ],
+    answer: 2,
+    explanation: "The email address has a zero instead of an 'o', which is a classic phishing trick. Always check the sender's address carefully before clicking anything."
+  },
+  {
+    q: "What is the main goal of a phishing attack?",
+    options: [
+      "To slow down your internet connection",
+      "To trick you into giving away personal information",
+      "To install games on your device",
+      "To improve your password strength"
+    ],
+    answer: 1,
+    explanation: "Phishing attacks are designed to steal personal information like passwords, usernames, and bank details by pretending to be a real and trusted source."
+  },
+  {
+    q: "Which of these is a warning sign that an email might be phishing?",
+    options: [
+      "It comes from someone you know",
+      "It says 'no rush, just checking in'",
+      "It says your account will be deleted unless you log in right now",
+      "It has your name in the subject line"
+    ],
+    answer: 2,
+    explanation: "Phishing emails often create a sense of urgency to panic you into clicking without thinking. Phrases like 'act now' or 'your account will be deleted' are common red flags."
+  },
+  {
+    q: "You hover over a link in an email and the address shown is 'http://amaz0n-deals.ru'. What does this tell you?",
+    options: [
+      "It is a special Amazon offer link",
+      "The link is suspicious and probably leads to a fake site",
+      "It is a secure link because it starts with http",
+      "The link is fine because Amazon is in the name"
+    ],
+    answer: 1,
+    explanation: "The real Amazon website is amazon.com. A link with 'amaz0n' and an unusual domain like '.ru' is almost certainly a phishing link trying to look like Amazon."
+  },
+  {
+    q: "You accidentally clicked a phishing link and entered your school login. What should you do first?",
+    options: [
+      "Nothing, it was probably fine",
+      "Delete the email and hope for the best",
+      "Change your school password straight away and tell a teacher or parent",
+      "Click the link again to check if it was really fake"
+    ],
+    answer: 2,
+    explanation: "If you entered your details on a phishing site, change your password immediately to lock out anyone who might have captured it. Then tell a trusted adult so they can help you."
+  }
 ];
-let current=0,score=0,answered=false;
-function loadQuestion(){answered=false;const q=questions[current];document.getElementById('questionText').textContent=q.q;document.getElementById('progressText').textContent=`Question ${current+1} of ${questions.length}`;document.getElementById('progressBar').style.width=`${(current/questions.length)*100}%`;document.getElementById('feedbackBox').className='quiz-feedback';document.getElementById('feedbackBox').textContent='';document.getElementById('nextBtn').style.display='none';const optArea=document.getElementById('optionsArea');optArea.innerHTML='';q.options.forEach((opt,i)=>{const btn=document.createElement('button');btn.className='quiz-option';btn.textContent=opt;btn.onclick=()=>selectAnswer(i);optArea.appendChild(btn);});}
-function selectAnswer(i){if(answered)return;answered=true;const q=questions[current];const btns=document.querySelectorAll('.quiz-option');btns.forEach(b=>b.disabled=true);const fb=document.getElementById('feedbackBox');if(i===q.answer){btns[i].classList.add('correct');fb.className='quiz-feedback correct';fb.innerHTML='✅ Correct! '+q.explanation;score++;}else{btns[i].classList.add('wrong');btns[q.answer].classList.add('correct');fb.className='quiz-feedback wrong';fb.innerHTML='❌ Not quite. '+q.explanation;}document.getElementById('nextBtn').style.display='block';}
-function nextQuestion(){current++;if(current<questions.length){loadQuestion();}else{showScore();}}
-function showScore(){document.getElementById('quizArea').style.display='none';document.getElementById('progressText').style.display='none';document.getElementById('progressBar').parentElement.style.display='none';const scoreArea=document.getElementById('scoreArea');scoreArea.style.display='block';document.getElementById('scoreNumber').textContent=`${score} / ${questions.length}`;const msgs=['Keep practising — you will get there! 💪','Good effort! Review the tips above. 📖','Well done! You know your stuff! 🌟','Amazing! You are a phishing expert! 🏆'];const idx=score<=1?0:score<=3?1:score===4?2:3;document.getElementById('scoreMessage').textContent=msgs[idx];}
-function restartQuiz(){current=0;score=0;document.getElementById('quizArea').style.display='block';document.getElementById('progressText').style.display='block';document.getElementById('progressBar').parentElement.style.display='block';document.getElementById('scoreArea').style.display='none';loadQuestion();}
+
+let current = 0, score = 0, answered = false;
+
+function loadQuestion() {
+  answered = false;
+  const q = questions[current];
+  document.getElementById('progress').textContent = 'Question ' + (current + 1) + ' of 5';
+  document.getElementById('question-text').textContent = q.q;
+
+  const area = document.getElementById('options-area');
+  area.innerHTML = '';
+  q.options.forEach(function(opt, i) {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-option';
+    btn.textContent = opt;
+    btn.onclick = function() { selectAnswer(i); };
+    area.appendChild(btn);
+  });
+
+  const feedback = document.getElementById('feedback');
+  feedback.className = 'quiz-feedback';
+  feedback.textContent = '';
+
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.className = 'btn-next';
+  nextBtn.textContent = current === questions.length - 1 ? 'See my score' : 'Next question';
+}
+
+function selectAnswer(i) {
+  if (answered) return;
+  answered = true;
+
+  const q = questions[current];
+  const buttons = document.querySelectorAll('.quiz-option');
+  buttons.forEach(function(btn) { btn.disabled = true; });
+
+  if (i === q.answer) {
+    buttons[i].classList.add('correct');
+    score++;
+  } else {
+    buttons[i].classList.add('wrong');
+    buttons[q.answer].classList.add('correct');
+  }
+
+  const feedback = document.getElementById('feedback');
+  feedback.textContent = q.explanation;
+  feedback.className = 'quiz-feedback show';
+
+  document.getElementById('next-btn').className = 'btn-next show';
+}
+
+function nextQuestion() {
+  current++;
+  if (current < questions.length) {
+    loadQuestion();
+  } else {
+    showScore();
+  }
+}
+
+function showScore() {
+  document.getElementById('quiz-area').style.display = 'none';
+  document.getElementById('progress').style.display = 'none';
+  const box = document.getElementById('score-box');
+  box.className = 'score-box show';
+  document.getElementById('score-num').textContent = score;
+  const msgs = ['Keep practising!', 'Not bad, try again!', 'Good effort!', 'Great work!', 'Perfect score!'];
+  document.getElementById('score-msg').textContent = msgs[score] || msgs[4];
+}
+
+function restartQuiz() {
+  current = 0; score = 0; answered = false;
+  document.getElementById('quiz-area').style.display = 'block';
+  document.getElementById('progress').style.display = 'block';
+  document.getElementById('score-box').className = 'score-box';
+  loadQuestion();
+}
+
 loadQuestion();
 </script>
 </body>
