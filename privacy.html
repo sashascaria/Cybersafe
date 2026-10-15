@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Privacy — CyberSafe Teens</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Privacy | CyberSafe Teens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg sticky-top">
+
+<nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="index.html">🛡️ CyberSafe</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand" href="index.html">️ CyberSafe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto gap-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="passwords.html">Passwords</a></li>
         <li class="nav-item"><a class="nav-link" href="phishing.html">Phishing</a></li>
@@ -26,75 +28,253 @@
     </div>
   </div>
 </nav>
-<div class="topic-banner banner-purple">
+
+<div class="page-hero">
   <div class="container">
-    <div style="font-size:3.5rem;margin-bottom:12px;">🔍</div>
-    <h1 style="color:#7E22CE;">Online Privacy</h1>
-    <p>Your personal information is precious. Learn what to keep private online!</p>
+    <h1> Online Privacy</h1>
+    <p>Not everything about you needs to be online. Here is what to keep to yourself.</p>
   </div>
 </div>
-<section class="content-section">
-  <div class="container" style="max-width:780px;">
-    <div class="content-card">
-      <h2>What is online privacy?</h2>
-      <p>Online privacy means keeping your personal information safe when you use the internet. Not everyone online is who they say they are — some people may try to use your information to harm you.</p>
-      <p>The good news is that by knowing what to share and what to keep private, you can stay much safer online!</p>
-    </div>
-    <div class="content-card">
-      <h2>Information you should NEVER share online 🚫</h2>
-      <ul class="tips-list">
-        <li><span class="tip-icon">🏠</span> Your home address or school name</li>
-        <li><span class="tip-icon">📞</span> Your phone number</li>
-        <li><span class="tip-icon">🎂</span> Your full date of birth</li>
-        <li><span class="tip-icon">📸</span> Photos that show where you live or go to school</li>
-        <li><span class="tip-icon">🔑</span> Any passwords or account details</li>
-        <li><span class="tip-icon">💳</span> Any family financial information</li>
-      </ul>
-    </div>
-    <div class="content-card">
-      <h2>How to protect your privacy online</h2>
-      <ul class="tips-list">
-        <li><span class="tip-icon">🔒</span> Set your social media accounts to private</li>
-        <li><span class="tip-icon">👥</span> Only accept friend requests from people you know in real life</li>
-        <li><span class="tip-icon">🤔</span> Think before you post — once something is online, it can stay there forever</li>
-        <li><span class="tip-icon">👨‍👩‍👧</span> Talk to a trusted adult if anyone online makes you uncomfortable</li>
-      </ul>
-    </div>
-    <div class="quiz-section">
-      <h2>🧠 Test Your Knowledge</h2>
-      <p style="color:#888;font-size:0.95rem;margin-bottom:20px;font-weight:600;">Answer all 5 questions and see how you do!</p>
-      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
-      <div class="quiz-progress" id="progressText">Question 1 of 5</div>
-      <div id="quizArea">
-        <div class="quiz-question" id="questionText"></div>
-        <div class="quiz-options" id="optionsArea"></div>
-        <div class="quiz-feedback" id="feedbackBox"></div>
-        <div class="quiz-nav"><button class="btn-next" id="nextBtn" onclick="nextQuestion()">Next question →</button></div>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+
+        <div class="info-card">
+          <h4>What is personal information?</h4>
+          <p>
+            Personal information is anything that could be used to identify you or find you in real life.
+            This includes your full name, address, school, phone number, and date of birth.
+            It also includes photos that show where you are, like your school uniform or your house in the background.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>Why does sharing too much cause problems?</h4>
+          <p>
+            Once something is posted online, you lose control of it. Other people can screenshot it, share it, or use it against you.
+            Strangers can use your personal details to find out where you live or go to school.
+            Even something small like telling people what time you leave for school can be dangerous if the wrong person reads it.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>Check your social media settings</h4>
+          <p>
+            Most social media apps are set to public by default, which means anyone in the world can see what you post.
+            Go into your settings and make your profile private so only people you approve can follow you.
+            Also check which apps on your phone have permission to access your location, camera, or microphone.
+            If an app does not need it, turn it off.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h4>Think before you post</h4>
+          <p>
+            Before you post anything online, ask yourself: would I be happy for my school or parents to see this?
+            If the answer is no, do not post it. The internet has a long memory and things that seem funny or harmless now
+            can cause problems years later. Universities and employers sometimes check social media too.
+          </p>
+        </div>
+
       </div>
-      <div class="quiz-score" id="scoreArea">
-        <span class="score-number" id="scoreNumber"></span>
-        <p id="scoreMessage"></p>
-        <button class="btn-retry" onclick="restartQuiz()">Try again 🔄</button>
+
+      <div class="col-lg-4">
+        <div class="why-badge">
+          <h4>Your privacy matters</h4>
+          <p>Sharing personal information online can lead to identity theft, stalking, and targeted scams. Taking a few simple steps now can protect you from a lot of problems later.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Keep these private</h4>
+          <ul class="tips-list">
+            <li>Your full name and address</li>
+            <li>Your school name</li>
+            <li>Your phone number</li>
+            <li>Your location in real time</li>
+            <li>Photos showing where you live</li>
+            <li>Your date of birth</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff; padding: 50px 0; border-top: 2px solid #EDE9FF;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+
+        <div class="quiz-wrapper">
+          <h3> Quick Quiz</h3>
+          <p class="quiz-progress" id="progress">Question 1 of 5</p>
+          <div id="quiz-area">
+            <p class="quiz-question" id="question-text"></p>
+            <div id="options-area"></div>
+            <div class="quiz-feedback" id="feedback"></div>
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Next question</button>
+          </div>
+          <div class="score-box" id="score-box">
+            <div class="score-num" id="score-num"></div>
+            <div class="score-label">out of 5</div>
+            <div class="score-msg" id="score-msg"></div>
+            <button class="btn-restart" onclick="restartQuiz()">Try again</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
-<footer><div class="container text-center"><p>🛡️ CyberSafe Teens &nbsp;|&nbsp; Made to keep young people safe online</p></div></footer>
+
+<footer>
+  <div class="container">
+    <span class="footer-brand">️ CyberSafe Teens</span>
+    <p style="margin:0;">Made by Sasha Scaria as an MYP Personal Project at GEMS Modern Academy, Dubai.</p>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-const questions=[
-  {q:"Which of these is safe to share publicly online?",options:["Your home address","Your favourite colour","Your phone number","Your school name"],answer:1,explanation:"Your favourite colour is harmless to share. Never share your address, phone number, or school name publicly."},
-  {q:"A stranger online asks where you go to school. What should you do?",options:["Tell them — it's just a school","Refuse to answer and tell a trusted adult","Give them a fake school name","Ask them why they want to know"],answer:1,explanation:"Never share your school name with strangers online. Tell a trusted adult immediately."},
-  {q:"You want to post a photo from your school trip. What should you check first?",options:["That you look good in it","That it does not show your school name or location","That your friends are smiling","That the lighting is good"],answer:1,explanation:"Photos can reveal your location without you realising. Always check that your school name or address is not visible."},
-  {q:"Why should you set your social media to private?",options:["To get more followers","So only people you know can see your posts","Because it looks cooler","It does not make a difference"],answer:1,explanation:"A private account means strangers cannot see your posts, photos, or personal information."},
-  {q:"Once you post something online, what can happen to it?",options:["It disappears after 24 hours","It stays private always","It can stay online forever and be seen by many people","Only your friends can see it"],answer:2,explanation:"Once something is posted online, it can be saved, shared, or seen by many people — even after you delete it."}
+const questions = [
+  {
+    q: "Which of these pieces of information is safest to share publicly online?",
+    options: [
+      "Your home address",
+      "Your favourite music artist",
+      "The name of your school",
+      "Your phone number"
+    ],
+    answer: 1,
+    explanation: "Sharing your favourite music artist is generally safe. Your address, school name, and phone number are personal details that could be used to find or contact you without your permission."
+  },
+  {
+    q: "Your social media profile is set to public. What does this mean?",
+    options: [
+      "Only your friends can see your posts",
+      "Your teachers can see your posts",
+      "Anyone in the world can see your posts",
+      "Only people in your country can see your posts"
+    ],
+    answer: 2,
+    explanation: "A public profile means your posts are visible to everyone, including strangers. It is much safer to set your account to private so only approved followers can see what you share."
+  },
+  {
+    q: "You post a photo outside your school in your uniform. What personal information might this reveal?",
+    options: [
+      "Nothing, it is just a photo",
+      "Your school name and roughly where you are every day",
+      "Only your face",
+      "Your home address"
+    ],
+    answer: 1,
+    explanation: "A photo in your uniform outside your school tells people where you go to school. This means a stranger would know where to find you on school days, which could be dangerous."
+  },
+  {
+    q: "Why is it important to check which apps have access to your location?",
+    options: [
+      "Apps with location access use more battery",
+      "It makes your phone faster",
+      "Apps could track where you are and share that data with others",
+      "It has no real effect on your privacy"
+    ],
+    answer: 2,
+    explanation: "Some apps share your location data with advertisers or other companies. If an app does not actually need your location to work, it is a good idea to turn off that permission."
+  },
+  {
+    q: "Which question is most useful to ask yourself before posting something online?",
+    options: [
+      "Will this get many likes?",
+      "Would I be okay with my parents or school seeing this?",
+      "How many characters is this?",
+      "Did someone else post something similar before?"
+    ],
+    answer: 1,
+    explanation: "Asking whether you are comfortable with everyone seeing something is a simple but effective way to check if it is appropriate to post. Once something is online, you cannot fully control who sees it."
+  }
 ];
-let current=0,score=0,answered=false;
-function loadQuestion(){answered=false;const q=questions[current];document.getElementById('questionText').textContent=q.q;document.getElementById('progressText').textContent=`Question ${current+1} of ${questions.length}`;document.getElementById('progressBar').style.width=`${(current/questions.length)*100}%`;document.getElementById('feedbackBox').className='quiz-feedback';document.getElementById('feedbackBox').textContent='';document.getElementById('nextBtn').style.display='none';const optArea=document.getElementById('optionsArea');optArea.innerHTML='';q.options.forEach((opt,i)=>{const btn=document.createElement('button');btn.className='quiz-option';btn.textContent=opt;btn.onclick=()=>selectAnswer(i);optArea.appendChild(btn);});}
-function selectAnswer(i){if(answered)return;answered=true;const q=questions[current];const btns=document.querySelectorAll('.quiz-option');btns.forEach(b=>b.disabled=true);const fb=document.getElementById('feedbackBox');if(i===q.answer){btns[i].classList.add('correct');fb.className='quiz-feedback correct';fb.innerHTML='✅ Correct! '+q.explanation;score++;}else{btns[i].classList.add('wrong');btns[q.answer].classList.add('correct');fb.className='quiz-feedback wrong';fb.innerHTML='❌ Not quite. '+q.explanation;}document.getElementById('nextBtn').style.display='block';}
-function nextQuestion(){current++;if(current<questions.length){loadQuestion();}else{showScore();}}
-function showScore(){document.getElementById('quizArea').style.display='none';document.getElementById('progressText').style.display='none';document.getElementById('progressBar').parentElement.style.display='none';document.getElementById('scoreArea').style.display='block';document.getElementById('scoreNumber').textContent=`${score} / ${questions.length}`;const msgs=['Keep practising — you will get there! 💪','Good effort! Review the tips above. 📖','Well done! You know your stuff! 🌟','Amazing! You are a privacy pro! 🏆'];document.getElementById('scoreMessage').textContent=msgs[score<=1?0:score<=3?1:score===4?2:3];}
-function restartQuiz(){current=0;score=0;document.getElementById('quizArea').style.display='block';document.getElementById('progressText').style.display='block';document.getElementById('progressBar').parentElement.style.display='block';document.getElementById('scoreArea').style.display='none';loadQuestion();}
+
+let current = 0, score = 0, answered = false;
+
+function loadQuestion() {
+  answered = false;
+  const q = questions[current];
+  document.getElementById('progress').textContent = 'Question ' + (current + 1) + ' of 5';
+  document.getElementById('question-text').textContent = q.q;
+
+  const area = document.getElementById('options-area');
+  area.innerHTML = '';
+  q.options.forEach(function(opt, i) {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-option';
+    btn.textContent = opt;
+    btn.onclick = function() { selectAnswer(i); };
+    area.appendChild(btn);
+  });
+
+  const feedback = document.getElementById('feedback');
+  feedback.className = 'quiz-feedback';
+  feedback.textContent = '';
+
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.className = 'btn-next';
+  nextBtn.textContent = current === questions.length - 1 ? 'See my score' : 'Next question';
+}
+
+function selectAnswer(i) {
+  if (answered) return;
+  answered = true;
+
+  const q = questions[current];
+  const buttons = document.querySelectorAll('.quiz-option');
+  buttons.forEach(function(btn) { btn.disabled = true; });
+
+  if (i === q.answer) {
+    buttons[i].classList.add('correct');
+    score++;
+  } else {
+    buttons[i].classList.add('wrong');
+    buttons[q.answer].classList.add('correct');
+  }
+
+  const feedback = document.getElementById('feedback');
+  feedback.textContent = q.explanation;
+  feedback.className = 'quiz-feedback show';
+
+  document.getElementById('next-btn').className = 'btn-next show';
+}
+
+function nextQuestion() {
+  current++;
+  if (current < questions.length) {
+    loadQuestion();
+  } else {
+    showScore();
+  }
+}
+
+function showScore() {
+  document.getElementById('quiz-area').style.display = 'none';
+  document.getElementById('progress').style.display = 'none';
+  const box = document.getElementById('score-box');
+  box.className = 'score-box show';
+  document.getElementById('score-num').textContent = score;
+  const msgs = ['Keep practising!', 'Not bad, try again!', 'Good effort!', 'Great work!', 'Perfect score!'];
+  document.getElementById('score-msg').textContent = msgs[score] || msgs[4];
+}
+
+function restartQuiz() {
+  current = 0; score = 0; answered = false;
+  document.getElementById('quiz-area').style.display = 'block';
+  document.getElementById('progress').style.display = 'block';
+  document.getElementById('score-box').className = 'score-box';
+  loadQuestion();
+}
+
 loadQuestion();
 </script>
 </body>
